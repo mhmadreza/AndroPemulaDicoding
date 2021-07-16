@@ -1,6 +1,7 @@
 package com.mr.subandropemula.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +16,8 @@ import com.bumptech.glide.Glide;
 import com.mr.subandropemula.DataKelas;
 import com.mr.subandropemula.R;
 import com.mr.subandropemula.model.KursusModel;
+import com.mr.subandropemula.ui.DetailActivity;
+import com.mr.subandropemula.ui.HomeActivity;
 
 import org.w3c.dom.Text;
 
@@ -80,6 +83,7 @@ public class KelasAdapter extends RecyclerView.Adapter<KelasAdapter.ViewHolder> 
 
     public interface AdapterListener {
         void onClick();
+
     }
 
 }

@@ -110,4 +110,9 @@
     </string>
     <string name="title_activity_detail">ScrollingActivity</string>
     <string name="label_image_by_unsplash_com">Image by Unsplash.com</string>
+    <string name="desc_kelas">Belajar Bahasa Pemrograman apa saja yang anda inginkan</string>
+    <string name="label_desc">Deskripsi</string>
+    <string name="isiDurasi">72 Jam</string>
+    <string name="hargaKelas">IDR 1.000.000</string>
+    <string name="namaKelas">Belajar Android</string>
 </resources>

@@ -16,6 +16,8 @@ import com.mr.subandropemula.R;
 import com.mr.subandropemula.adapter.KelasAdapter;
 import com.mr.subandropemula.model.KursusModel;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
     private List<KursusModel> itemData = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,10 +76,12 @@ public class HomeActivity extends AppCompatActivity {
         rvData.setLayoutManager(layoutManager);
         itemData.addAll(DataKelas.getListData());
 
+
         adapter = new KelasAdapter(itemData, this, new KelasAdapter.AdapterListener() {
             @Override
             public void onClick() {
-                startActivity(new Intent(HomeActivity.this, DetailActivity.class));
+                Intent moveData = new Intent(HomeActivity.this, DetailActivity.class);
+                startActivity(moveData);
             }
         });
         rvData.setAdapter(adapter);
